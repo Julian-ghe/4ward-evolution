@@ -117,7 +117,7 @@ section { padding: 5.5rem 0; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('../images/hero.png') center/cover no-repeat;
+  background: url('../../shared/images/hero.png') center/cover no-repeat;
 }
 .hero-overlay {
   position: absolute; inset: 0;

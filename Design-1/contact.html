@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | 4ward Evolution</title>
+  <meta name="description" content="Kontaktieren Sie 4ward Evolution für ein unverbindliches Beratungsgespräch.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo"><img src="images/logo.png" alt="4ward Evolution Logo"></a>
+      <div class="nav-links">
+        <a href="index.html" data-nav-key="home">Home</a>
+        <a href="approach.html" data-nav-key="approach">Beratungsansatz</a>
+        <a href="portfolio.html" data-nav-key="portfolio">Portfolio</a>
+        <a href="about.html" data-nav-key="about">&Uuml;ber uns</a>
+        <a href="contact.html" data-nav-key="contact" class="active">Kontakt</a>
+        <div class="lang-switch">
+          <button data-lang="de" class="active">DE</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="min-height: 40vh; padding-top: 80px;">
+    <div class="hero-shape hero-shape-1"></div>
+    <div class="hero-shape hero-shape-2"></div>
+    <div class="container">
+      <div class="hero-content fade-in">
+        <span class="section-label" style="color: var(--orange-light);">
+          <span data-lang-de>Kontakt</span>
+          <span data-lang-en>Contact</span>
+        </span>
+        <h1 style="font-size: clamp(2rem, 4.5vw, 3rem);">
+          <span data-lang-de>Lassen Sie uns ins Gespr&auml;ch kommen</span>
+          <span data-lang-en>Let's Start a Conversation</span>
+        </h1>
+        <p class="hero-tagline">
+          <span data-lang-de>Vereinbaren Sie ein unverbindliches Kennenlern-Gespr&auml;ch oder schreiben Sie uns direkt.</span>
+          <span data-lang-en>Schedule a no-obligation introductory call or write to us directly.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section>
+    <div class="container">
+      <div class="contact-grid fade-in">
+        <!-- Contact Form -->
+        <div>
+          <h3 style="margin-bottom: 1.5rem;">
+            <span data-lang-de>Nachricht senden</span>
+            <span data-lang-en>Send a Message</span>
+          </h3>
+          <form class="contact-form">
+            <div class="form-group">
+              <label>
+                <span data-lang-de>Name *</span>
+                <span data-lang-en>Name *</span>
+              </label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-de>E-Mail *</span>
+                <span data-lang-en>Email *</span>
+              </label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-de>Unternehmen</span>
+                <span data-lang-en>Company</span>
+              </label>
+              <input type="text" name="company">
+            </div>
+            <div class="form-group">
+              <label>
+                <span data-lang-de>Ihre Nachricht *</span>
+                <span data-lang-en>Your Message *</span>
+              </label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              <span data-lang-de>Nachricht senden</span>
+              <span data-lang-en>Send Message</span>
+              &rarr;
+            </button>
+          </form>
+        </div>
+
+        <!-- Info & Calendly -->
+        <div>
+          <h3 style="margin-bottom: 1.5rem;">
+            <span data-lang-de>Direkt Termin buchen</span>
+            <span data-lang-en>Book a Meeting Directly</span>
+          </h3>
+
+          <!-- Calendly Embed Placeholder -->
+          <div style="background: var(--gray-50); border-radius: var(--radius); padding: 2rem; text-align: center; margin-bottom: 2rem; border: 2px dashed var(--gray-200);">
+            <div style="font-size: 2.5rem; margin-bottom: 1rem;">&#128197;</div>
+            <h4>Calendly</h4>
+            <p style="color: var(--color-text-light); font-size: 0.9rem; margin-bottom: 1.25rem;">
+              <span data-lang-de>Hier wird Ihr Calendly-Kalender eingebettet.</span>
+              <span data-lang-en>Your Calendly calendar will be embedded here.</span>
+            </p>
+            <p style="font-size: 0.8rem; color: var(--gray-400);">
+              <span data-lang-de>Ersetzen Sie diesen Bereich mit Ihrem Calendly-Embed-Code:<br>
+              <code>&lt;div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK"&gt;&lt;/div&gt;</code></span>
+              <span data-lang-en>Replace this area with your Calendly embed code:<br>
+              <code>&lt;div class="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK"&gt;&lt;/div&gt;</code></span>
+            </p>
+          </div>
+
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="ci-icon">&#9993;</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@4wardevolution.com">info@4wardevolution.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="ci-icon">&#127760;</div>
+              <div>
+                <h4>Web</h4>
+                <p><a href="https://www.4wardevolution.com">www.4wardevolution.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="ci-icon" style="background: var(--teal);">&#128101;</div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p><a href="https://linkedin.com" target="_blank" rel="noopener">4ward Evolution</a></p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="ci-icon" style="background: var(--orange);">&#127970;</div>
+              <div>
+                <h4>
+                  <span data-lang-de>Unternehmen</span>
+                  <span data-lang-en>Company</span>
+                </h4>
+                <p>4ward Evolution GmbH<br>Coaching &amp; Consulting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Quick Access -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h3>
+          <span data-lang-de>Oder kontaktieren Sie uns direkt</span>
+          <span data-lang-en>Or contact us directly</span>
+        </h3>
+      </div>
+      <div class="grid-4 fade-in" style="text-align: center;">
+        <div>
+          <div class="team-avatar" style="margin: 0 auto 0.75rem; width: 60px; height: 60px; font-size: 1.2rem;">A</div>
+          <h4 style="font-size: 0.95rem;">Anja Milde</h4>
+        </div>
+        <div>
+          <div class="team-avatar" style="margin: 0 auto 0.75rem; width: 60px; height: 60px; font-size: 1.2rem; background: linear-gradient(135deg, var(--teal), var(--teal-dark));">K</div>
+          <h4 style="font-size: 0.95rem;">Karin G&ouml;hre</h4>
+        </div>
+        <div>
+          <div class="team-avatar" style="margin: 0 auto 0.75rem; width: 60px; height: 60px; font-size: 1.2rem; background: linear-gradient(135deg, var(--orange), var(--amber));">S</div>
+          <h4 style="font-size: 0.95rem;">Stefanie Ebeling</h4>
+        </div>
+        <div>
+          <div class="team-avatar" style="margin: 0 auto 0.75rem; width: 60px; height: 60px; font-size: 1.2rem; background: linear-gradient(135deg, var(--green-dark), var(--green-mid));">T</div>
+          <h4 style="font-size: 0.95rem;">Thomas Schubert</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo"><img src="images/logo.png" alt="4ward Evolution"></div>
+          <p class="footer-tagline">Beratung &amp; Transformation</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <a href="index.html" data-nav-key="home">Home</a>
+          <a href="approach.html" data-nav-key="approach">Beratungsansatz</a>
+          <a href="portfolio.html" data-nav-key="portfolio">Portfolio</a>
+          <a href="about.html" data-nav-key="about">&Uuml;ber uns</a>
+          <a href="contact.html" data-nav-key="contact">Kontakt</a>
+        </div>
+        <div class="footer-links">
+          <h4><span data-lang-de>Kontakt</span><span data-lang-en>Contact</span></h4>
+          <a href="mailto:info@4wardevolution.com">info@4wardevolution.com</a>
+          <a href="https://www.4wardevolution.com">www.4wardevolution.com</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 4ward Evolution GmbH. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
