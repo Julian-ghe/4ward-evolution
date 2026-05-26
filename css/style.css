@@ -119,11 +119,11 @@ section { padding: 6.5rem 0; }
 .hero-bg {
   position: absolute; inset: 0;
   background: url('../images/hero.png') center/cover no-repeat;
-  opacity: .7;
+  opacity: .8;
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(105deg, rgba(28,53,54,.92) 0%, rgba(28,53,54,.65) 50%, rgba(28,53,54,.35) 100%);
+  background: linear-gradient(105deg, rgba(28,53,54,.88) 0%, rgba(28,53,54,.55) 50%, rgba(28,53,54,.2) 100%);
 }
 .hero-content { position: relative; z-index: 2; max-width: 580px; }
 .hero-content h1 { color: var(--white); margin-bottom: 1.5rem; font-weight: 500; }
