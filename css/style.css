@@ -131,7 +131,7 @@ section { padding: 6.5rem 0; }
 .hero-btns { display: flex; gap: .75rem; flex-wrap: wrap; }
 
 /* Sub-page hero (shorter) */
-.hero-sub { min-height: 50vh; padding-top: 72px; padding-bottom: 3rem; display: flex; align-items: center; }
+.hero-sub { min-height: auto; padding-top: 11rem; padding-bottom: 5rem; }
 
 /* Section variants — muted */
 .sec-dark { background: var(--grey-900); color: var(--white); }
@@ -290,7 +290,7 @@ section { padding: 6.5rem 0; }
   .g2,.g3,.g4 { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding: 7rem 0 4rem; }
-  .hero-sub { min-height: auto; padding: 7rem 0 3rem; }
+  .hero-sub { padding: 8rem 0 3rem; }
   .shift-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; }
   .footer-bottom { flex-direction: column; text-align: center; }
