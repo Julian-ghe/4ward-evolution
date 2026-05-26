@@ -123,7 +123,7 @@ section { padding: 6.5rem 0; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(105deg, rgba(28,53,54,.88) 0%, rgba(28,53,54,.55) 50%, rgba(28,53,54,.2) 100%);
+  background: linear-gradient(105deg, rgba(28,53,54,.62) 0%, rgba(28,53,54,.32) 50%, rgba(28,53,54,.08) 100%);
 }
 .hero-content { position: relative; z-index: 2; max-width: 580px; }
 .hero-content h1 { color: var(--white); margin-bottom: 1.5rem; font-weight: 500; }
@@ -134,7 +134,7 @@ section { padding: 6.5rem 0; }
 .hero-sub { min-height: auto; padding-top: 11rem; padding-bottom: 5rem; }
 
 /* Section variants — muted */
-.sec-dark { background: var(--grey-900); color: var(--white); }
+.sec-dark { background: var(--teal-800); color: var(--white); }
 .sec-dark h2,.sec-dark h3,.sec-dark h4 { color: var(--white); }
 .sec-dark .subtitle,.sec-dark .eyebrow { color: var(--teal-300); }
 .sec-alt { background: var(--c-bg-alt); }
