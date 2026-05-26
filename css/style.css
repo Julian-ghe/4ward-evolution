@@ -131,7 +131,7 @@ section { padding: 6.5rem 0; }
 .hero-btns { display: flex; gap: .75rem; flex-wrap: wrap; }
 
 /* Sub-page hero (shorter) */
-.hero-sub { min-height: 42vh; }
+.hero-sub { min-height: 50vh; padding-top: 72px; padding-bottom: 3rem; display: flex; align-items: center; }
 
 /* Section variants — muted */
 .sec-dark { background: var(--grey-900); color: var(--white); }
