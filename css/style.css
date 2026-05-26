@@ -118,7 +118,7 @@ section { padding: 6.5rem 0; }
 }
 .hero > .wrap {
   display: flex; flex-direction: column; width: 100%;
-  padding-top: 3rem; padding-bottom: 3.5rem; position: relative; z-index: 2;
+  padding-top: 3rem; padding-bottom: 1.25rem; position: relative; z-index: 2;
 }
 .hero-bg {
   position: absolute; inset: 0;
