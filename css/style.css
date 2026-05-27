@@ -164,6 +164,13 @@ section { padding: 6.5rem 0; }
 .sec-dark .card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); box-shadow: none; }
 .sec-dark .card:hover { border-color: rgba(160,196,197,.25); background: rgba(255,255,255,.06); }
 
+/* Lever / Principle eyebrow (replaces numbered badge) */
+.lever-eyebrow {
+  font-size: .7rem; font-weight: 600; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--teal-300);
+  margin-bottom: .9rem;
+}
+
 /* Numbered items — understated */
 .num {
   display: inline-flex; align-items: center; justify-content: center;
@@ -178,8 +185,17 @@ section { padding: 6.5rem 0; }
 .shift-col { padding: 2rem; }
 .shift-col.from { background: var(--grey-50); }
 .shift-col.to { background: var(--teal-50); }
-.shift-col h4 { margin-bottom: 1rem; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--grey-400); }
-.shift-col.to h4 { color: var(--teal-600); }
+.shift-col h4 {
+  margin-bottom: 1.4rem; font-size: .9rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--grey-700); padding-bottom: .75rem;
+  border-bottom: 2px solid var(--grey-200); position: relative;
+}
+.shift-col h4 .label-key {
+  color: var(--teal-700); font-weight: 700;
+}
+.shift-col.to h4 { color: var(--teal-800); border-bottom-color: var(--teal-200); }
+.shift-col.to h4 .label-key { color: var(--teal-600); }
 .shift-row { padding: .7rem 0; border-bottom: 1px solid rgba(0,0,0,.04); font-size: .9rem; line-height: 1.55; }
 .shift-row:last-child { border-bottom: none; }
 
@@ -393,6 +409,19 @@ section { padding: 6.5rem 0; }
   color: var(--teal-600); padding-top: .15rem;
 }
 .list-clean .li-text { flex: 1; }
+.list-clean.list-labeled .li {
+  align-items: baseline;
+  gap: 1.8rem;
+}
+.list-clean.list-labeled .li-label {
+  flex-shrink: 0; width: 150px;
+  font-size: .82rem; font-weight: 600; letter-spacing: .03em;
+  color: var(--teal-700); padding-top: .05rem;
+}
+@media (max-width: 700px) {
+  .list-clean.list-labeled .li { flex-direction: column; gap: .35rem; align-items: flex-start; }
+  .list-clean.list-labeled .li-label { width: auto; font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; }
+}
 
 /* Result callout — visually separated */
 .callout {
