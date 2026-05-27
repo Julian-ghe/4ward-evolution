@@ -2,6 +2,7 @@
 
 const NAV = {
   home: { de: 'Home', en: 'Home' },
+  approach: { de: 'Ansatz', en: 'Approach' },
   portfolio: { de: 'Portfolio', en: 'Portfolio' },
   about: { de: 'Über uns', en: 'About' },
   contact: { de: 'Kontakt', en: 'Contact' }
