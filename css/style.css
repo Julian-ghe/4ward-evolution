@@ -164,6 +164,31 @@ section { padding: 6.5rem 0; }
 .sec-dark .card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); box-shadow: none; }
 .sec-dark .card:hover { border-color: rgba(160,196,197,.25); background: rgba(255,255,255,.06); }
 
+/* Certification cards */
+.cert-row {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+}
+.cert-card {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-decoration: none; gap: .6rem; padding: 1.5rem 1.25rem;
+  background: var(--white); border: 1px solid var(--c-border); border-radius: 10px;
+  transition: all var(--t); min-height: 130px;
+  box-shadow: 0 1px 2px rgba(28,53,54,.03);
+}
+.cert-card:hover { border-color: var(--teal-300); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(28,53,54,.07); }
+.cert-mark {
+  font-size: 1.4rem; font-weight: 700; letter-spacing: .04em;
+  color: var(--teal-700); line-height: 1;
+}
+.cert-label {
+  font-size: .72rem; color: var(--grey-500); text-align: center; line-height: 1.4;
+}
+.cert-card-img { padding-top: .75rem; }
+.cert-img { width: 64px; height: 64px; object-fit: contain; }
+@media (max-width: 700px) {
+  .cert-row { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* Lever / Principle eyebrow (replaces numbered badge) */
 .lever-eyebrow {
   font-size: .7rem; font-weight: 600; letter-spacing: .16em;
@@ -516,6 +541,11 @@ section { padding: 6.5rem 0; }
 .offer-meta .row strong {
   display: block; font-size: .72rem; font-weight: 600; letter-spacing: .12em;
   text-transform: uppercase; color: var(--teal-600); margin-bottom: .2rem;
+}
+.offer-cue {
+  margin-top: auto; padding-top: 1.1rem; border-top: 1px solid var(--c-border);
+  font-size: .82rem; font-weight: 500; color: var(--teal-700);
+  line-height: 1.5;
 }
 
 /* Micro testimonial */
