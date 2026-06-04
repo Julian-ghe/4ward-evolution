@@ -164,27 +164,24 @@ section { padding: 6.5rem 0; }
 .sec-dark .card { background: rgba(255,255,255,.04); border-color: rgba(255,255,255,.08); box-shadow: none; }
 .sec-dark .card:hover { border-color: rgba(160,196,197,.25); background: rgba(255,255,255,.06); }
 
-/* Certification cards */
+/* Certification cards — clean logo lock-up */
 .cert-row {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem;
+  align-items: stretch;
 }
 .cert-card {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  text-decoration: none; gap: .6rem; padding: 1.5rem 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; padding: 1.75rem 1.5rem;
   background: var(--white); border: 1px solid var(--c-border); border-radius: 10px;
-  transition: all var(--t); min-height: 130px;
+  transition: all var(--t); min-height: 140px;
   box-shadow: 0 1px 2px rgba(28,53,54,.03);
 }
 .cert-card:hover { border-color: var(--teal-300); transform: translateY(-2px); box-shadow: 0 6px 18px rgba(28,53,54,.07); }
-.cert-mark {
-  font-size: 1.4rem; font-weight: 700; letter-spacing: .04em;
-  color: var(--teal-700); line-height: 1;
+.cert-logo {
+  max-width: 100%; max-height: 56px; width: auto; height: auto;
+  object-fit: contain;
 }
-.cert-label {
-  font-size: .72rem; color: var(--grey-500); text-align: center; line-height: 1.4;
-}
-.cert-card-img { padding-top: .75rem; }
-.cert-img { width: 64px; height: 64px; object-fit: contain; }
+.cert-img { width: 84px; height: 84px; object-fit: contain; }
 @media (max-width: 700px) {
   .cert-row { grid-template-columns: repeat(2, 1fr); }
 }
@@ -546,6 +543,56 @@ section { padding: 6.5rem 0; }
   margin-top: auto; padding-top: 1.1rem; border-top: 1px solid var(--c-border);
   font-size: .82rem; font-weight: 500; color: var(--teal-700);
   line-height: 1.5;
+}
+
+/* Portfolio offer rows — image + text, alternating */
+.offer-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem;
+  align-items: center;
+}
+.offer-row.reverse .offer-media { order: 2; }
+.offer-row .offer-media {
+  border-radius: 12px; overflow: hidden;
+  box-shadow: 0 8px 28px rgba(28,53,54,.10), 0 2px 6px rgba(28,53,54,.04);
+  aspect-ratio: 4/3; background: var(--grey-100);
+}
+.offer-row .offer-media img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.offer-row .offer-text .offer-num {
+  font-size: .8rem; font-weight: 600; letter-spacing: .18em;
+  color: var(--teal-600); text-transform: uppercase; margin-bottom: .8rem;
+}
+.offer-row .offer-text h2 {
+  font-size: clamp(1.7rem, 3vw, 2.1rem); font-weight: 500;
+  color: var(--grey-900); margin-bottom: 1.25rem;
+  position: relative; padding-bottom: 1rem;
+}
+.offer-row .offer-text h2::after {
+  content: ""; display: block; width: 48px; height: 2px;
+  background: var(--teal-500); border-radius: 1px;
+  position: absolute; left: 0; bottom: 0;
+}
+.offer-row .offer-text .offer-body { font-size: .98rem; line-height: 1.75; color: var(--c-text); margin-bottom: 1.25rem; }
+.offer-row .offer-meta-inline {
+  display: grid; gap: .5rem; padding-top: 1rem; border-top: 1px solid var(--c-border);
+}
+.offer-row .offer-meta-inline .row { font-size: .88rem; line-height: 1.55; color: var(--c-text); }
+.offer-row .offer-meta-inline .row strong {
+  display: inline-block; min-width: 110px; font-size: .72rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--teal-700);
+}
+.offer-row .testimonial-inline {
+  margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px dashed var(--c-border);
+  font-size: .9rem; color: var(--grey-600); font-style: italic; line-height: 1.6;
+}
+.offer-row .testimonial-inline cite {
+  display: block; margin-top: .5rem; font-style: normal; font-size: .78rem;
+  color: var(--teal-700); font-weight: 500;
+}
+@media (max-width: 880px) {
+  .offer-row { grid-template-columns: 1fr; gap: 2rem; }
+  .offer-row.reverse .offer-media { order: 0; }
 }
 
 /* Micro testimonial */
