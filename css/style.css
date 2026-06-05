@@ -135,6 +135,14 @@ section { padding: 6.5rem 0; }
 }
 .hero-content h1 { color: var(--white); margin-bottom: 1.5rem; font-weight: 500; white-space: nowrap; max-width: none; }
 .hero-lead { font-size: 1.05rem; line-height: 1.8; opacity: .85; margin-bottom: 0; }
+.hero-bayer {
+  margin-top: 1.5rem; padding: 1rem 1.25rem;
+  border-left: 3px solid var(--teal-300);
+  background: rgba(255,255,255,.06);
+  font-size: 1.05rem; line-height: 1.65; font-weight: 500;
+  color: var(--white); border-radius: 0 6px 6px 0;
+  backdrop-filter: blur(2px);
+}
 .hero-btns { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: auto; padding-top: 2rem; }
 
 /* Sub-page hero (shorter) */
