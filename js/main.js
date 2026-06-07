@@ -69,15 +69,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { btn.textContent = lang === 'de' ? 'Nachricht senden' : 'Send message'; form.reset(); }, 3000);
   });
 
-  // Cookie banner
-  const cb = document.getElementById('cookie-banner');
-  if (cb && !localStorage.getItem('4we-cookies')) {
-    cb.style.display = 'flex';
-    cb.querySelector('.cb-accept').addEventListener('click', () => {
-      localStorage.setItem('4we-cookies', '1'); cb.style.display = 'none';
-    });
-    cb.querySelector('.cb-decline').addEventListener('click', () => {
-      localStorage.setItem('4we-cookies', '0'); cb.style.display = 'none';
-    });
-  }
 });

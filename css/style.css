@@ -357,18 +357,6 @@ section { padding: 6.5rem 0; }
 .footer-bottom a { color: rgba(255,255,255,.4); }
 .footer-bottom a:hover { color: rgba(255,255,255,.75); }
 
-/* Cookie banner */
-#cookie-banner {
-  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
-  background: var(--grey-900); color: rgba(255,255,255,.8); padding: 1rem 1.5rem;
-  align-items: center; justify-content: space-between; gap: 1rem; font-size: .82rem;
-  border-top: 1px solid rgba(255,255,255,.08);
-}
-#cookie-banner .cb-btns { display: flex; gap: .5rem; flex-shrink: 0; }
-#cookie-banner button { padding: .4rem 1rem; border-radius: 3px; font-size: .78rem; font-weight: 500; cursor: pointer; border: none; }
-.cb-accept { background: var(--teal-700); color: var(--white); }
-.cb-decline { background: rgba(255,255,255,.08); color: rgba(255,255,255,.6); }
-
 /* Quote — subtle */
 .quote { font-style: italic; border-left: 2px solid var(--grey-200); padding-left: 1.5rem; margin: 2.5rem 0; color: var(--grey-500); }
 .quote-author { font-style: normal; font-weight: 500; font-size: .82rem; color: var(--grey-500); margin-top: .5rem; }
@@ -389,12 +377,19 @@ section { padding: 6.5rem 0; }
   section { padding: 4.5rem 0; }
   .wrap { padding: 0 1.25rem; }
   .nav-links {
+    display: none !important;
     position: fixed; top: 72px; left: 0; right: 0; background: var(--white);
-    flex-direction: column; padding: 1.5rem; gap: 1rem; border-bottom: 1px solid var(--grey-100);
-    transform: translateY(-110%); transition: transform var(--t);
+    flex-direction: column; align-items: stretch; padding: 1.25rem 1.5rem;
+    gap: .25rem; border-bottom: 1px solid var(--grey-100);
+    box-shadow: 0 10px 24px rgba(28,53,54,.08);
   }
-  .nav-links.open { transform: translateY(0); }
-  .nav-tog { display: flex; }
+  .nav-links.open { display: flex !important; }
+  .nav-links a { padding: .85rem .25rem; font-size: 1rem; border-bottom: 1px solid var(--grey-100); }
+  .nav-links a:last-child { border-bottom: none; }
+  .nav-tog { display: flex !important; order: 3; padding: 8px; }
+  .nav-tog span { width: 22px; height: 2px; background: var(--grey-800); }
+  .lang-sw { margin-left: auto !important; margin-right: .25rem; order: 2; }
+  .nav-logo { order: 1; max-width: 50% !important; }
   .g2,.g3,.g4 { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding: 7rem 0 4rem; }
