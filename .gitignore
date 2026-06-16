@@ -1,2 +1,5 @@
 .DS_Store
 deploy/
+
+# Local traceable backup of pre-optimization images (not committed)
+images_originals_backup/

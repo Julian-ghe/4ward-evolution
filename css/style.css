@@ -123,7 +123,7 @@ section { padding: 6.5rem 0; }
 }
 .hero-bg {
   position: absolute; inset: 0;
-  background: url('../images/hero.png') center/cover no-repeat;
+  background: url('../images/hero.webp') center/cover no-repeat;
   opacity: .8;
 }
 .hero-overlay {
@@ -307,7 +307,7 @@ section { padding: 6.5rem 0; }
   border: 1px solid var(--grey-200);
 }
 .team-photo {
-  flex-shrink: 0; width: 96px; height: 96px;
+  flex-shrink: 0; width: 128px; height: 128px;
   border-radius: 14px; object-fit: cover;
   border: 1px solid var(--grey-200);
   background: var(--grey-100);
@@ -391,6 +391,7 @@ section { padding: 6.5rem 0; }
   .lang-sw { margin-left: auto !important; margin-right: .25rem; order: 2; }
   .nav-logo { order: 1; max-width: 50% !important; }
   .g2,.g3,.g4 { grid-template-columns: 1fr; }
+  .team-photo { width: 108px; height: 108px; }
   .contact-grid { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding: 7rem 0 4rem; }
   .hero > .wrap { padding-top: 0; padding-bottom: 0; }
