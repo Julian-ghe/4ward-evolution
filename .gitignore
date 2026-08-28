@@ -3,3 +3,6 @@ deploy/
 
 # Local traceable backup of pre-optimization images (not committed)
 images_originals_backup/
+
+# Local preview server config (not committed)
+.claude/launch.json
